@@ -1,6 +1,6 @@
 ---
 layout: redirect
-redirect_to: https://www.kavehrs.com/logbook/
+redirect_to: https://www.kavehrs.com/notes/
 sitemap: false
 noindex: true
 title: انتقال

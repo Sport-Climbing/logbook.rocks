@@ -1,6 +1,7 @@
 {% comment %}
-Homepage teasers: news and articles only. Ascent reports moved to kavehrs.com;
-this site keeps redirect stubs under /logbook/ and does not teaser local reports.
+Homepage teasers: news and articles only. Ascent reports live as notes on
+kavehrs.com (/notes/ listing, /blog/:path/ posts). This site keeps redirect
+stubs under /logbook/ that point at /blog/ and does not teaser local reports.
 {% endcomment %}
 {% assign hub_items = site.news | where_exp: "post", "post.layout != 'redirect'" %}
 {% if site.articles %}
@@ -9,8 +10,8 @@ this site keeps redirect stubs under /logbook/ and does not teaser local reports
 {% assign latest_hub = hub_items | sort: 'date' | reverse %}
 <div class="home-columns">
   <div class="home-column">
-    <h2><a href="https://www.kavehrs.com/logbook/">گزارش صعود</a></h2>
-    <p>گزارش‌های صعود به <a href="https://www.kavehrs.com/logbook/">kavehrs.com</a> منتقل شده‌اند.</p>
+    <h2><a href="https://www.kavehrs.com/notes/">یادداشت‌ها و گزارش صعود</a></h2>
+    <p>گزارش‌های صعود به‌صورت یادداشت در <a href="https://www.kavehrs.com/notes/">kavehrs.com/notes</a> (پست‌ها در <a href="https://www.kavehrs.com/blog/">/blog/</a>) هستند.</p>
   </div>
   <div class="home-column">
     <h2><a href="{{ '/news/' | relative_url }}">خبر کوهنوردی</a> · <a href="{{ '/articles/' | relative_url }}">مقالات</a></h2>
