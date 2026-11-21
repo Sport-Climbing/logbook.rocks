@@ -1,10 +1,7 @@
 {% comment %}
-Homepage teasers: four newest logbook reports, then the five newest items from
-the news hub — اخبار and مقالات merged and sorted by date, so whichever section
-published most recently shows up. Collection-driven on purpose: never hardcode
-titles in index.md, and never hand-edit this list after a publish.
+Homepage teasers: news and articles only. Ascent reports moved to kavehrs.com;
+this site keeps redirect stubs under /logbook/ and does not teaser local reports.
 {% endcomment %}
-{% assign latest_logbook = site.logbook | sort: 'date' | reverse %}
 {% assign hub_items = site.news | where_exp: "post", "post.layout != 'redirect'" %}
 {% if site.articles %}
   {% assign hub_items = hub_items | concat: site.articles %}
@@ -12,12 +9,8 @@ titles in index.md, and never hand-edit this list after a publish.
 {% assign latest_hub = hub_items | sort: 'date' | reverse %}
 <div class="home-columns">
   <div class="home-column">
-    <h2><a href="{{ '/logbook/' | relative_url }}">گزارش صعود</a></h2>
-    <ul>
-      {% for post in latest_logbook limit: 4 %}
-      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
+    <h2><a href="https://www.kavehrs.com/logbook/">گزارش صعود</a></h2>
+    <p>گزارش‌های صعود به <a href="https://www.kavehrs.com/logbook/">kavehrs.com</a> منتقل شده‌اند.</p>
   </div>
   <div class="home-column">
     <h2><a href="{{ '/news/' | relative_url }}">خبر کوهنوردی</a> · <a href="{{ '/articles/' | relative_url }}">مقالات</a></h2>

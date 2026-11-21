@@ -3,7 +3,7 @@
 Jekyll mountaineering site (Cloudflare Pages + GitHub Pages): https://logbook.rocks  
 Repo: `KavehRS/logbook.rocks` · default branch: `main`
 
-Ascent reports, logbook rules, SEO targeting, and agent skills were transferred here from `kavehrs.com` (`KavehRS/website`). The personal/engineering site remains https://www.kavehrs.com.
+Ascent reports (گزارش صعود) now live on https://www.kavehrs.com (`KavehRS/website`). This repo keeps redirect stubs under `_logbook/` to those pages. New گزارش صعود work goes in the website repo. Keep `_news/` and `_articles/` here on logbook.rocks.
 
 ## Cloudflare MCP (same account as kavehrs.com)
 
@@ -111,8 +111,9 @@ Build must succeed before opening or merging a PR. Drafts under `_drafts/` and `
 
 | Path | Purpose |
 |------|---------|
-| `_logbook/` | Published climb / ascent reports (primary SEO target) |
-| `_news/` | Climbing news (خبر کوهنوردی) |
+| `_logbook/` | Redirect stubs to ascent reports on https://www.kavehrs.com/logbook/ (content lives in `KavehRS/website`) |
+| `_news/` | Climbing news (خبر کوهنوردی) — stays on this site |
+| `_articles/` | Journal articles (مقالات) — stays on this site |
 | `_drafts/` | Unpublished templates/samples only |
 
 ## Factual accuracy (required)
